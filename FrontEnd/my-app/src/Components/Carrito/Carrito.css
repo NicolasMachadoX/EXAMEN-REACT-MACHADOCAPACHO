@@ -1,0 +1,38 @@
+.carrito{
+    position: static;
+
+    width: 20em;
+    height: 40em;
+    background-color: aliceblue;
+
+
+}
+
+.content-carrito{
+    width: 30em;
+   
+}
+
+.cardSell{  
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 7em;
+
+}
+
+.imgCard{
+
+    width: 4em;
+    height: 4em;
+}
+.pE{
+    font-size: 12px;
+}
+.order{
+    width: 28em;
+    height: 6em;
+    background-color: rgb(255, 181, 181);
+}

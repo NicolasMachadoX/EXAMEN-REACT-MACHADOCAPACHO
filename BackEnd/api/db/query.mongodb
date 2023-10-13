@@ -1,0 +1,140 @@
+use("db_atlas");
+db.createCollection("producto");
+db.createCollection("categoria");
+
+db.categoria.insertOne({
+    nombre: "Zapatos deportivos",
+});
+
+db.producto.insertOne({
+    nombre: "Tenis Urban Para Hombre Zapatos De Golf De Mujer Air 1 Rojo",
+    imagen:[
+        "https://http2.mlstatic.com/D_NQ_NP_2X_877527-CBT69406340833_052023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_747562-CBT69406340815_052023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_991580-CBT69406340817_052023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_843255-CBT69406340823_052023-F.webp",
+        "https://http2.mlstatic.com/D_NQ_NP_2X_957710-CBT69406340809_052023-F.webp"
+    ],
+    valoracion: 5,
+    descripcion: "¡Bienvenido a nuestra tienda, más colores y modelos, visite la tienda! Somos de tamaño estándar europeo, elija el tamaño adecuado de la longitud de los pies si confunde con el tamaño: si sus pies son más gruesos o más salvajes, elija un tamaño más grande tabla de tallas Referencia a continuación: EU35 = MX2.5 = MX22.5 = longitud de los pies 22,5 cm EU36 = MX3 = MX23 = Longitud de los pies 23 cm; EU37 = MX3.5 = MX23.5 = Longitud de los pies 23,5 cm; EU38 = MX4.5 = MX24 = Longitud de los pies 24 cm; EU39 = MX5 = MX24.5 = Longitud de los pies 24,5 cm; EU40 = MX6 = MX25 = Longitud de los pies 25 cm; EU41 = MX6.5 = MX26 = Longitud de los pies 25,5 cm; EU42 = MX7.5 = MX27 = Longitud de los pies 26 cm; EU43 = MX8 = MX27.5 = Longitud de los pies 26,5 cm; Nota: Debido a la diferencia entre diferentes monitores, es posible que la imagen no refleje el color real del artículo. Puede haber una diferencia de 1 a 2 cm debido a la medición manual; comprueba los detalles del tamaño antes de comprar. Gracias por su comprensión. Consejo: antes de realizar un pedido, solicite al servicio de atención al cliente la recomendación de tamaño, ya que la conversión de diferentes tamaños puede ser diferente, puede indicarnos su tamaño mexicano antes de realizar el pedido, podemos recomendarle el tamaño más adecuado para usted y ¡Evite comprar el tamaño incorrecto! Si hay un problema con el producto, no se queje de inmediato, comuníquese con nosotros en el pedido, ¡haremos todo lo posible para resolver el problema por usted! ¡Gracias por su cooperación!",
+    precio: 171491,
+    descuento: 0,
+    categoriaId: "507f191e810c19729de860ea"
+});
+
+
+{
+  "abrigo": [
+    {
+      "nombre": "Chaqueta Impermeable En Gabán Para Dama 'Azul'",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_787280-MCO51843885132_102022-F.webp",
+      "precio": 93900,
+      "id": 1
+    },
+    {
+      "nombre": "Chaqueta Impermeable En Gabán Para Dama 'Negro'",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_904140-MCO51843801912_102022-F.webp",
+      "precio": 93900,
+      "id": 2
+    },
+    {
+      "nombre": "Chaqueta Impermeable En Gabán Para Dama 'Blanco'",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_930447-MCO71410142210_092023-F.webp",
+      "precio": 93900,
+      "id": 3
+    },
+    {
+      "nombre": "Chaqueta Hombre Cuero Sintético",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_712593-MCO41606376126_052020-F.webp",
+      "precio": 102000,
+      "id": 4
+    },
+    {
+      "nombre": "Calidad Chaqueta Hombre Algodon Colombiano Buso Ropa Buzos",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_829630-MCO31080337339_062019-F.webp",
+      "precio": 77900,
+      "id": 5
+    }
+  ],
+  "camiseta":[
+    {
+      "nombre": "Camiseta De Compresión En Licra Uv Slim.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_906094-MCO53976036500_022023-F.webp",
+      "precio": 38000,
+      "id": 1
+    },
+    {
+      "nombre": "Camiseta Tipo Polo Color Dama Mujer.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_649847-MCO43854241255_102020-F.webp",
+      "precio": 26255,
+      "id": 2
+    },
+    {
+      "nombre": "Camiseta Deportiva, Crossfit, Gym, Ejercicios Al Aire Libre.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_995623-MCO70722158553_072023-F.webp",
+      "precio": 29900,
+      "id": 3
+    },
+    {
+      "nombre": "Camisetas Bandas De Rock Metal Heavy Riffs.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_776916-MCO72088562654_102023-F.webp",
+      "precio": 32850,
+      "id": 4
+    },
+    {
+      "nombre": "Camiseta Anime Nezuko Kamado Kimetsu No Yaiba Demon Slayer",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_968038-MCO53410409233_012023-F.webp",
+      "precio": 29900,
+      "id": 5
+    }
+  ],
+  "pantalon":[
+    {
+      "nombre": "Pantalon En Dril Licrado Para Hombre.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_731406-MCO42646277112_072020-F.webp",
+      "precio": 58900,
+      "id": 1
+    },
+    {
+      "nombre": "Pantalón Camuflado Hermoso.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_795748-MCO70527773883_072023-F.webp",
+      "precio": 104405,
+      "id": 2
+    },
+    {
+      "nombre": "Pantalón Jogger Cargo, Táctico, Militar.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_758206-MCO70501309390_072023-F.webp",
+      "precio": 104500,
+      "id": 3
+    },
+    {
+      "nombre": "Pantalón Jeans De Colores Entubado Para Hombre.",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_947436-MCO69626235546_052023-F.webp",
+      "precio": 61750,
+      "id": 4
+    },
+    {
+      "nombre": "Pantalon Camuflado, De Bolsillos 100% Dreal",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_618657-MCO69523195685_052023-F.webp",
+      "precio": 89990,
+      "id": 5
+    }
+  ],
+  "carrito":[
+    {
+      "abrigoId":3,
+      "cantidad":2,
+      "id":1
+    },
+    {
+      "pantalonId":1,
+      "cantidad":2,
+      "id":2
+    },
+    {
+      "camisetaId":4,
+      "cantidad":1,
+      "id":3
+    }
+  ]
+}
